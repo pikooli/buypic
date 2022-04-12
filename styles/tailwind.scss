@@ -1,0 +1,33 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.navbar {
+  background-color: gray;
+  color: antiquewhite;
+  min-height: 62px;
+  padding: 10px 20px;
+  .nav-item {
+    margin-left: 10px;
+  }
+  a {
+    &:hover {
+      color: rgb(163, 162, 162);
+    }
+  }
+  .nav-link {
+    margin-right: 10px;
+  }
+  button {
+    &:hover {
+      background-color: rgb(163, 162, 162);
+    }
+  }
+}
+
+.btn {
+  @apply px-3 py-1 border rounded mx-2 my-1;
+  &.btn-primary {
+    @apply bg-sky-600 text-white hover:bg-sky-700;
+  }
+}
